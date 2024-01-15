@@ -123,6 +123,28 @@ In **notebook.ipynb**, I explore a variety of models: LinearRegression, RandomFo
 
 I performed cross-validation and hyperparamets tuning.
 
+The final fight was between CatBoostRegressor and SVR:
+
+```
+CatBoostRegressor:
+Mean Absolute Error (Train): 37964.68
+Mean Absolute Error Percentage (Train): 0.29
+--------------------------------------
+R-squared (Validation): 0.37
+Mean Squared Error (Test): 2282144154.58
+Mean Absolute Error (Test): 36687.85
+Mean Absolute Error Percentage (Test): 0.29
+
+SVR
+Mean Absolute Error (Train): 37488.94
+Mean Absolute Error Percentage (Train): 0.29
+--------------------------------------
+R-squared (Validation): 0.37
+Mean Squared Error (Test): 2309968633.19
+Mean Absolute Error (Test): 36906.22
+Mean Absolute Error Percentage (Test): 0.30
+```
+
 ## Training the Final Model
 
 I copied the code from data cleaning and features extraction process into `train.py` file.
