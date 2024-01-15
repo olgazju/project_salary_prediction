@@ -41,6 +41,15 @@ The dataset presents a range of factors that potentially influence the salaries 
 - `company_location`: The location of the company.
 - `company_size`: The size of the company (e.g., Small, Medium, Large).
 
+| work_year | job_title               | job_category                  | salary_currency | salary | salary_in_usd | employee_residence | experience_level | employment_type | work_setting | company_location | company_size |
+|-----------|-------------------------|-------------------------------|-----------------|--------|---------------|-------------------|------------------|-----------------|--------------|------------------|--------------|
+| 2023      | Data DevOps Engineer    | Data Engineering               | EUR             | 88000  | 95012         | Germany           | Mid-level        | Full-time       | Hybrid       | Germany          | L            |
+| 2023      | Data Architect           | Data Architecture and Modeling | USD             | 186000 | 186000        | United States     | Senior           | Full-time       | In-person    | United States    | M            |
+| 2023      | Data Architect           | Data Architecture and Modeling | USD             | 81800  | 81800         | United States     | Senior           | Full-time       | In-person    | United States    | M            |
+| 2023      | Data Scientist           | Data Science and Research      | USD             | 212000 | 212000        | United States     | Senior           | Full-time       | In-person    | United States    | M            |
+| 2023      | Data Scientist           | Data Science and Research      | USD             | 93300  | 93300         | United States     | Senior           | Full-time       | In-person    | United States    | M            |
+
+
 ### Data Preprocessing
 
 Data preprocessing steps include cleaning, handling missing values, encoding categorical variables, and normalizing numerical features. The dataset is then split into training and testing sets for model development and evaluation.
