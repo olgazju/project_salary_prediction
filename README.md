@@ -172,5 +172,17 @@ To run the web service, use the following command in the terminal:
 uvicorn predict:app --reload
 ```
 
-Then open `predict.ipynb`. Here you can find code for request to the server (sort of a client):
+Then open `predict.ipynb`. Here you can find code for request to the server (sort of a client).
+
+First it reads a random row from test set and shows it as JSON:
+<img width="1002" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/31d217ce-5cd0-4a15-af8c-6feda5966e39">
+
+The next cell uses this JSON to make a request to the server:
+<img width="566" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/f8702244-c898-4723-a906-1f6355bc722c">
+
+Meanwhile, the server side:
+<img width="1183" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/08b8af3e-d985-4c68-a376-4228b43b61f6">
+
+
+
 
