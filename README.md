@@ -118,11 +118,14 @@ I performed cross-validation and hyperparamets tuning.
 
 I copied the code from data cleaning and features extraction process into `train.py` file.
 
-It loads the dataset from `data/jobs_in_data.csv`, cleans it and extract festurs. Then it train the model.
+It loads the dataset from `data/jobs_in_data.csv`, cleans it and extract festurs. Then it finetune and train the model.
 
 How to run:
 
 ```python
 python train.py
 ```
+
+<img width="642" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/59c20be7-4225-45cf-81db-d848560fc58b">
+
 
