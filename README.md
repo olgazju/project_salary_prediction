@@ -340,7 +340,14 @@ Minikube is a tool that lets you run Kubernetes locally. Minikube runs a single-
     ```
 
     Run the first sell and then the request cell:
+   
     <img width="399" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/75619a20-d9c3-4d73-aa95-ffb9dd2e4355">
 
     Process:
+
+
+    https://github.com/olgazju/project_salary_prediction/assets/14594349/7fcce60b-2ce2-4a1b-8416-a8f34b2bcf29
+
+
+   
    
