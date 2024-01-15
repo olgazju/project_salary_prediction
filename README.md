@@ -308,16 +308,39 @@ Minikube is a tool that lets you run Kubernetes locally. Minikube runs a single-
    <img width="724" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/9ce16f31-4f64-481c-8392-056b81b6f505">
 
    
-9. **Let's deploy the model**
+8. **Let's deploy the model**
 
    You have deployment.yaml file in the project folder. Deploy it and check if it went well.
 
    ```bash
        kubectl apply -f deployment.yaml
        kubectl get deployments
+   ```
+
+   https://github.com/olgazju/project_salary_prediction/assets/14594349/0f7921db-a143-4cbe-9d36-c8ef34c405c0
+
+9. **Let's create a service**
+
+    ```
+    kubectl expose deployment salary-predictor-deployment --type=NodePort --port=8000
+    minikube service salary-predictor-deployment
     ```
 
-    https://github.com/olgazju/project_salary_prediction/assets/14594349/0f7921db-a143-4cbe-9d36-c8ef34c405c0
+ <img width="1099" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/945c1cd1-4055-4d38-a9d3-a6d31d1cb328">
 
 
+Find the Minikube Service URL. The command below will open a browser with the right link for your service. Copy this link, open
+`predict.ipynb`. Here you can find code for salary predictions request and insert your url in the code instead MINIKUBE_URL.
+
+    ```
+    import requests
+    url = "MINIKUBE_URL/predict"
+    client = json_data
+    requests.post(url, json=client).json()
+    ```
+
+Run the first sell and then the request cell:
+<img width="399" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/75619a20-d9c3-4d73-aa95-ffb9dd2e4355">
+
+Process:
    
