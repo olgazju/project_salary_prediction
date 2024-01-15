@@ -243,3 +243,62 @@ docker stop <container-id>
 
 ## Cloud Deployment
 
+### Installing and Running Minikube
+
+Minikube is a tool that lets you run Kubernetes locally. Minikube runs a single-node Kubernetes cluster on your personal computer (including Windows, macOS, and Linux PCs) so that you can try out Kubernetes, or for daily development work. You should have Docker installed.
+
+1. **Install Homebrew** (if it's not already installed):
+
+    ```bash
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+
+2. **Install Minikube via Homebrew**:
+
+    ```bash
+    brew install minikube
+    ```
+
+3. **Start Minikube**:
+
+    ```bash
+    minikube start
+    ```
+
+4. **Install kubectl**:
+
+   ```bash
+       brew install kubectl
+    ```
+
+5. **To point your terminal to use the docker daemon inside minikube run this**
+
+   ```bash
+       eval $(minikube docker-env)
+    ```
+
+   Now any ‘docker’ command you run in this current terminal will run against the docker inside minikube cluster.
+
+6. **To build docker image inside minikube**
+
+   ```bash
+       minikube cache add python:3.10.12-slim
+       docker build -t salary-predictor . --progress=plain
+    ```
+
+   If I run
+
+   ```bash
+       docker ps
+    ```
+
+   I should see my salary-predictor:latest image.
+   
+8. **Let's deploy the model**
+
+   You have deployment.yaml file in the project folder. Deploy it and check if it went well.
+
+   ```bash
+       kubectl apply -f deployment.yaml
+       kubectl get deployments
+    ```
