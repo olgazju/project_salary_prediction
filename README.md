@@ -106,6 +106,23 @@ Data preprocessing steps include cleaning, handling missing values, encoding cat
 
 ## Exploratory Data Analysis (EDA)
 
-The exploratory data analysis is detailed in **EDA.ipynb**, using the dataset located at `data/jobs_in_data.csv`.
+The exploratory data analysis is detailed in **notebook.ipynb**, using the dataset located at `data/jobs_in_data.csv`.
 
-In the end, the cleaned dataset was saved to **data/cleaned.parquet** for use in Modeling.
+## Model Selection Process and Parameter Tuning
+
+In **notebook.ipynb**, I explore a variety of models: LinearRegression, RandomForestRegressor, SVR, CatBoostRegressor and a simple neural network model.
+
+I performed cross-validation and hyperparamets tuning.
+
+## Training the Final Model
+
+I copied the code from data cleaning and features extraction process into `train.py` file.
+
+It loads the dataset from `data/jobs_in_data.csv`, cleans it and extract festurs. Then it train the model.
+
+How to run:
+
+```python
+python train.py
+```
+
