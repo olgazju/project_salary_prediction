@@ -265,13 +265,21 @@ Minikube is a tool that lets you run Kubernetes locally. Minikube runs a single-
     minikube start
     ```
 
-4. **Install kubectl**:
+    For the first run, it might take a lot of time.
+
+    ```bash
+    minikube status
+    ```
+    
+    <img width="734" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/75b32a2b-36e0-410b-9feb-8725dabea57a">
+
+5. **Install kubectl**:
 
    ```bash
        brew install kubectl
     ```
 
-5. **To point your terminal to use the docker daemon inside minikube run this**
+6. **To point your terminal to use the docker daemon inside minikube run this**
 
    ```bash
        eval $(minikube docker-env)
@@ -279,22 +287,28 @@ Minikube is a tool that lets you run Kubernetes locally. Minikube runs a single-
 
    Now any ‘docker’ command you run in this current terminal will run against the docker inside minikube cluster.
 
-6. **To build docker image inside minikube**
+7. **To build docker image inside minikube**
 
    ```bash
-       minikube cache add python:3.10.12-slim
+       minikube image load python:3.10.12-slim
        docker build -t salary-predictor . --progress=plain
     ```
+
+   <img width="872" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/ae7f58f6-bec2-461b-aa12-00e29d69a85b">
+
 
    If I run
 
    ```bash
-       docker ps
+       docker images
     ```
 
-   I should see my salary-predictor:latest image.
+   I should see my salary-predictor:latest image (first row on the image below)
+
+   <img width="724" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/9ce16f31-4f64-481c-8392-056b81b6f505">
+
    
-8. **Let's deploy the model**
+9. **Let's deploy the model**
 
    You have deployment.yaml file in the project folder. Deploy it and check if it went well.
 
@@ -302,3 +316,8 @@ Minikube is a tool that lets you run Kubernetes locally. Minikube runs a single-
        kubectl apply -f deployment.yaml
        kubectl get deployments
     ```
+
+    https://github.com/olgazju/project_salary_prediction/assets/14594349/0f7921db-a143-4cbe-9d36-c8ef34c405c0
+
+
+   
