@@ -53,7 +53,7 @@ The dataset presents a range of factors that potentially influence the salaries 
 
 ### Data Preprocessing
 
-Data preprocessing steps include cleaning, handling missing values, encoding categorical variables, and normalizing numerical features. The dataset is then split into training and testing sets for model development and evaluation.
+Data preprocessing steps include cleaning, handling missing values, encoding categorical variables, and normalizing numerical features. The dataset is then split into train, dev and test sets for model development and evaluation.
 
 ## Instructions on How to Run the Project
 
