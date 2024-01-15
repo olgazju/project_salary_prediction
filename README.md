@@ -183,6 +183,53 @@ The next cell uses this JSON to make a request to the server:
 Meanwhile, the server side:
 <img width="1183" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/08b8af3e-d985-4c68-a376-4228b43b61f6">
 
+## Docker
 
+To containerize and run the model locally using Docker, you'll need to follow these steps:
 
+### 1. **Install Docker Desktop for Mac**
+
+- Go to the [Docker Desktop for Mac](https://www.docker.com/products/docker-desktop) download page.
+- Click on "Download for Mac" and the download will start automatically.
+- Once downloaded, double click on the Docker.dmg file to open it.
+- Drag the Docker icon to your Applications folder to complete the installation.
+- Launch Docker Desktop from your Applications folder.
+
+### 2. **Build the Docker Image**
+
+- Open a terminal.
+- Navigate to the project root directory.
+- Run the following command to build `salary-predictor` Docker image:
+
+```bash
+docker build -t salary-predictor .
+```
+
+### 3. **Run the Docker Image**
+
+- After successfully building the image, run the following command to start a container from the image
+
+```bash
+docker run -p 8000:8000 salary-predictor
+```
+
+### 4. **Accessing the Service**
+
+- Now that the model is running in a Docker container, open `predict.ipynb`. Here you can find code for request to the server (sort of a client). Follow the instructions from the previous step
+
+### 5. **Stop the Docker Container**
+
+- To stop the Docker container, find the container ID with the following command:
+
+```bash
+docker ps
+```
+
+Then stop the container with:
+
+```bash
+docker stop <container-id>
+```
+
+## Cloud Deployment
 
