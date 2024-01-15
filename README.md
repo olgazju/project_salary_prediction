@@ -22,7 +22,7 @@ In the dynamic world of data science and technology, I find it really essential 
 
 ### Data Source
 
-The dataset used for this project is sourced from [Jobs and Salaries in Data Science]([https://www.kaggle.com/datasets/ruchi798/data-science-job-salaries](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data)).
+The dataset used for this project is sourced from [Jobs and Salaries in Data Science](https://www.kaggle.com/datasets/hummaamqaasim/jobs-in-data).
 
 ### Description
 
