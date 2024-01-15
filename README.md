@@ -205,6 +205,9 @@ To containerize and run the model locally using Docker, you'll need to follow th
 docker build -t salary-predictor .
 ```
 
+<img width="1179" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/34fb0424-e7df-4646-abf4-770f041285a9">
+
+
 ### 3. **Run the Docker Image**
 
 - After successfully building the image, run the following command to start a container from the image
@@ -212,10 +215,15 @@ docker build -t salary-predictor .
 ```bash
 docker run -p 8000:8000 salary-predictor
 ```
+<img width="1187" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/a0055861-00c7-45b9-b5d1-49fedd9db58a">
+
 
 ### 4. **Accessing the Service**
 
 - Now that the model is running in a Docker container, open `predict.ipynb`. Here you can find code for request to the server (sort of a client). Follow the instructions from the previous step
+
+<img width="965" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/4ace4db4-7816-4049-a837-2d51ee5c000d">
+
 
 ### 5. **Stop the Docker Container**
 
