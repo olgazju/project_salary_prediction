@@ -49,7 +49,6 @@ The dataset presents a range of factors that potentially influence the salaries 
 | 2023      | Data Scientist           | Data Science and Research      | USD             | 212000 | 212000        | United States     | Senior           | Full-time       | In-person    | United States    | M            |
 | 2023      | Data Scientist           | Data Science and Research      | USD             | 93300  | 93300         | United States     | Senior           | Full-time       | In-person    | United States    | M            |
 
-
 ### Data Preprocessing
 
 Data preprocessing steps include cleaning, handling missing values, encoding categorical variables, and normalizing numerical features. The dataset is then split into training and testing sets for model development and evaluation.
@@ -159,4 +158,19 @@ python train.py
 
 <img width="642" alt="image" src="https://github.com/olgazju/project_salary_prediction/assets/14594349/59c20be7-4225-45cf-81db-d848560fc58b">
 
+## Loading the Model and Serving It via a Web Service
+
+Finally, I've set up a web service (Fast API) to serve the trained model.
+
+The code for the service is located in the `predict.py` file.
+
+### How to Run the Service
+
+To run the web service, use the following command in the terminal:
+
+```bash
+uvicorn predict:app --reload
+```
+
+Then open `predict.ipynb`. Here you can find code for request to the server (sort of a client):
 

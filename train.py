@@ -150,4 +150,4 @@ with open('models_binary/label_encoder.pkl', 'wb') as f:
 with open('models_binary/one_hot_encoder.pkl', 'wb') as f:
     pickle.dump(one_hot_encoder, f)
 
-test_copy.to_csv('models_binary/test_copy.csv')
+test_copy.to_csv('models_binary/test_copy.csv', index=False)
