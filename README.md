@@ -1,5 +1,7 @@
 # Salary Prediction for Data Professionals
 
+Capstone Project for [ML Zoom Camp](https://github.com/DataTalksClub/machine-learning-zoomcamp/tree/master/projects)
+
 ## Overview
 
 In the dynamic world of data science and technology, I find it really essential to understand what drives salaries in this field. This isn't just important for professionals like me but also for those hiring in the sector and those analyzing industry trends. My project is centered around building a machine learning model that can predict the salaries for these diverse roles. I'm diving into complex questions, like how a person's job title, their experience, where they're based, and their company's size, can influence their earnings. Through this project, my aim is really to help people understand how much they can earn in different tech roles like data science, engineering, analysis, and machine learning. It's all about making things clearer for everyone - whether you're trying to figure out your next career move, or you're a company looking to hire the right talent. I want to give a down-to-earth, real-world picture of what pay looks like in these fields, breaking it down so it's easy to get the whole picture of the tech job market's salary trends.
